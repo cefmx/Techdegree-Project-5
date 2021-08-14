@@ -6,6 +6,9 @@
   <title>Photo Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="StyleSheet" href="css/baguetteBox.css">
+  <script src="js/baguetteBox.js"></script>
+  <script src="js/searchFilter.js"></script>
 </head>
 
 </head>
@@ -13,17 +16,67 @@
 <body>
 
     <main>
-        <div class="grid">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
+        <div class="container">
+            <input type="search" id="search" name="search" placeholder="Search">
+            <div class="gallery">
+
+                <a href="source_files/photos/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                <img src="source_files/photos/thumbnails/01.jpg" title="Hay Bales">
+                </a>
+
+                <a href="source_files/photos/02.jpg" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                <img src="source_files/photos/thumbnails/02.jpg" title="Lake">
+                </a>
+
+                <a href="source_files/photos/03.jpg" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                <img src="source_files/photos/thumbnails/03.jpg" title="Canyon">
+                </a>
+
+                <a href="source_files/photos/04.jpg" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                <img src="source_files/photos/thumbnails/04.jpg" title="Iceberg">
+                </a>
+
+                <a href="source_files/photos/05.jpg" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                <img src="source_files/photos/thumbnails/05.jpg" title="Desert">
+                </a>
+
+                <a href="source_files/photos/06.jpg" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
+                <img src="source_files/photos/thumbnails/06.jpg" title="Fall">
+                </a>
+
+                <a href="source_files/photos/07.jpg" data-caption="I drove past this plantation yesterday, everything is so green!">
+                <img src="source_files/photos/thumbnails/07.jpg" title="Plantation">
+                </a>
+
+                <a href="source_files/photos/08.jpg" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                <img src="source_files/photos/thumbnails/08.jpg" title="Dunes">
+                </a>
+
+                <a href="source_files/photos/09.jpg" data-caption="We enjoyed a quiet stroll down this countryside lane.">
+                <img src="source_files/photos/thumbnails/09.jpg" title="Countryside Lane">
+                </a>
+
+                <a href="source_files/photos/10.jpg" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
+                <img src="source_files/photos/thumbnails/10.jpg" title="Sunset">
+                </a>
+
+                <a href="source_files/photos/11.jpg" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+                <img src="source_files/photos/thumbnails/11.jpg" title="Cave">
+                </a>
+
+                <a href="source_files/photos/12.jpg" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+                <img src="source_files/photos/thumbnails/12.jpg" title="Bluebells">
+                </a>
+             </div>    
+           
         </div>
     </main>
     
 
+    <script>
+       baguetteBox.run('.gallery', {
+        });
+      </script>
 </body>
 
 <footer>

@@ -1,10 +1,25 @@
 
 
+.main-content {
+    width: 95%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-top: auto;
+    
+}
 
 
-
-
-/* --- GRID LAYOUT --- */
+/* --- GRID LAYOUT --- 
 
 .grid {
     max-width: 800px;
@@ -15,3 +30,77 @@
     grid-auto-columns: 100px;
     grid-auto-flow: column;
 }
+
+/*
+
+/* Notes and tests: Can use percentage for grid template columns 
+and auto eg. 200px auto 200px 
+
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-template-rows: minmax(200px, 1fr) 1fr 1fr;
+grid-template-columns: 1fr repeat(2, 1fr);
+grid-column-gap: 20px;
+auto-fill or auto-fit 
+
+
+eg:  ||||
+.container { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 350px 100px;
+    grid-gap: 10px;
+
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+
+|| 
+
+grid-column: 1 / -1 
+(shorthand syntax)
+grid-row: 2 / 3
+
+
+
+    */
+
+
+
+
+    /*
+
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px minmax(200px, 1fr) 100px;
+        grid-gap:: 10px;
+        grid-template-areas: 
+          "header header" 
+          "main aside" 
+          "footer footer"
+    }
+
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    aside {
+        grid-area: aside;
+    }
+
+    footer { 
+        grid-area: footer;
+    }
+
+
+    */
