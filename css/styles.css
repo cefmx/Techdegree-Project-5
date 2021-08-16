@@ -38,3 +38,8 @@ body {
     font-family: tahoma;
     letter-spacing: 0.5px;
 }
+
+#search:focus {
+    outline-color: #fddeaf;
+}
+
